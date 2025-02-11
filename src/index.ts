@@ -110,7 +110,7 @@ Response format should be formatted in a JSON block like this:
 
 export class DirectClient {
     public app: express.Application;
-    private agents: Map<string, AgentRuntime>; // container management
+    agents: Map<string, AgentRuntime>; // container management
     private server: any; // Store server instance
     public startAgent: Function; // Store startAgent functor
     public loadCharacterTryPath: Function; // Store loadCharacterTryPath functor

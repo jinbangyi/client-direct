@@ -740,7 +740,7 @@ var DirectClient = class {
           memory,
           [responseMessage],
           state,
-          async (newMessages, _status) => {
+          async (newMessages, undefined2, _status) => {
             message = newMessages;
             status = _status;
             return [memory];
