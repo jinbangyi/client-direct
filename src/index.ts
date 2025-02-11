@@ -317,7 +317,7 @@ export class DirectClient {
                     memory,
                     [responseMessage],
                     state,
-                    async (newMessages, _status?: { saveCallbackMessage: boolean, saveAIResponseMessage: boolean }) => {
+                    async (newMessages, undefined, _status?: { saveCallbackMessage: boolean, saveAIResponseMessage: boolean }) => {
                         message = newMessages;
                         status = _status;
                         return [memory];
